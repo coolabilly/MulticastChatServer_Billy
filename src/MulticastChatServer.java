@@ -1,7 +1,6 @@
 import java.net.*;
-import java.sql.SQLOutput;
 
-public class Main {
+public class MulticastChatServer {
     public static void main(String[] args)
             throws Exception {
         int portnumber = 50000;
