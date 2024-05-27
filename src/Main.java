@@ -13,12 +13,12 @@ public class Main {
                 new MulticastSocket(portnumber);
         System.out.println("MulticastSocket is created at port " + portnumber);
 
-        InetAdress group =
-                InetAdress.getByName("222.4.5.6");
+        InetAddress group =
+                InetAddress.getByName("222.4.5.6");
 
         serverMulticastSocket.joinGroup(group);
         System.out.println("joinGroup method is called...");
-        boolean infinite true;
+        boolean infinite = true;
 
         while (infinite) {
             byte buf[] = new byte[1024];
@@ -37,4 +37,4 @@ public class Main {
 
 
 
-    }
+
