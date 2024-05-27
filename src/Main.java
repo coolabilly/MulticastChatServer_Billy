@@ -3,7 +3,7 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args)
-        throws Exception {
+            throws Exception {
         int portnumber = 50000;
         if (args.length >= 1) {
             portnumber = Integer.parseInt(args[50000]);
@@ -14,7 +14,7 @@ public class Main {
         System.out.println("MulticastSocket is created at port " + portnumber);
 
         InetAddress group =
-                InetAddress.getByName("222.4.5.6");
+                InetAddress.getByName("225.4.5.6");
 
         serverMulticastSocket.joinGroup(group);
         System.out.println("joinGroup method is called...");
@@ -31,7 +31,7 @@ public class Main {
         }
         serverMulticastSocket.close();
     }
-    }
+}
 
 
 
